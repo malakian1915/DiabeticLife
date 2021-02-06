@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gustavo.diabetes_mellitus.Medicamentos.Tela_Medicamentos">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#ffffff">
+
+        <CheckBox
+            android:id="@+id/chkInsulina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/insulina"
+            android:text="    Insulina"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkAcarbose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkInsulina"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/acarbose"
+            android:text="    Acarbose"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkCanagliflozina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkAcarbose"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/canagliflozina"
+            android:text="    Canagliflozina"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkEmpagliflozina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkCanagliflozina"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/empagliflozina"
+            android:text="    Empagliflozina"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkExenatida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkEmpagliflozina"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/exenatida"
+            android:text="    Exenatida"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkGlibenclamida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkExenatida"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/glibenclamida"
+            android:text="    Glibenclamida"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkGliclazida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkGlibenclamida"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/gliclazida"
+            android:text="    Gliclazida"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkGlimepirida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkGliclazida"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/glimepirida"
+            android:text="    Glimepirida"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkGlipizida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkGlimepirida"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/glipizida"
+            android:text="    Glipizida"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkLiraglutida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkGlipizida"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/liraglutida"
+            android:text="    Liraglutida"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkMetformina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkLiraglutida"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/metformina"
+            android:text="    Metformina"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkMiglitol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkMetformina"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/miglitol"
+            android:text="    Miglitol"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkRosigitazona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkMiglitol"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/rosigitazona"
+            android:text="    Rosigitazona"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkSaxagliptina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkRosigitazona"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/saxagliptina"
+            android:text="    Saxagliptina"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkSitagliptina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkSaxagliptina"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/sitagliptina"
+            android:text="    Sitagliptina"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkVildagliptina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkSitagliptina"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/vildagliptina"
+            android:text="    Vildagliptina"
+            android:textSize="18sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilMaisRemedios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkVildagliptina"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/edtMaisRemedios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escrever outros medicamentos (opcional)"
+                android:textSize="20sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSalvarMedicamentos"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnVerMedicamentos"
+            android:background="@android:color/holo_green_light"
+            android:text="SALVAR MEDICAMENTOS"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnVerMedicamentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tilMaisRemedios"
+            android:background="@android:color/holo_green_light"
+            android:text="VER MEDICAMENTOS SALVOS"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

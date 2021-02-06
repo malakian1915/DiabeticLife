@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Diabetic Life</string>
+    <string name="action_settings">Remover anúncios</string>
+    <string name="tituloInicio">Diabetic Life</string>
+    <string name="tituloDados">Registro</string>
+    <string name="tituloVerAnotacoes">Anotações feitas</string>
+    <string name="erroTxtVazio">O campo não deve estar vazio</string>
+
+    <!-- inicio dos texto dos botoes -->
+    <string name="btnTxtDieta">Dieta</string>
+    <string name="btnTxtLembrete">Alarme diário</string>
+    <string name="btnTxtAnotacoes">Anotações</string>
+    <string name="btnTxtSintomas">Sintomas</string>
+    <string name="btnTxtDicas">Dicas</string>
+    <string name="btnTxtGrafico">Gráfico de Glicemia</string>
+    <string name="btnTxtAgenda">Agenda</string>
+    <string name="btnTxtMedicamentos">Medicamentos</string>
+    <string name="btnTxtVerRelatorio">Relatório</string>
+    <string name="btnTxtVerAnotacao">Anotações</string>
+    <!-- fim dos texto dos botoes -->
+
+    <!-- inicio textos dos toogleButton alarmes -->
+    <string name="domingoWeek">Dom</string>
+    <string name="segundaWeek">Seg</string>
+    <string name="tercaWeek">Ter</string>
+    <string name="quartaWeek">Qua</string>
+    <string name="quintaWeek">Qui</string>
+    <string name="sextaWeek">Sex</string>
+    <string name="sabadoWeek">Sab</string>
+    <!-- fim textos dos toogleButton alarmes -->
+
+    <string-array name="itensCmb">
+        <item></item>
+        <item>DIABETES TIPO 1</item>
+        <item>DIABETES TIPO 2</item>
+        <item>DIABETES INSIPIDUS</item>
+        <item>DIABETES GESTACIONAL</item>
+    </string-array>
+</resources>

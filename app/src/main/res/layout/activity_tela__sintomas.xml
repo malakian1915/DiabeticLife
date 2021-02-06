@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gustavo.diabetes_mellitus.Sintomas.Tela_Sintomas">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="#ffffff" >
+
+        <CheckBox
+            android:id="@+id/chkAlteracaoVisual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/alteracaovisual"
+            android:text="    Visão turva"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkAumentoDePeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkAlteracaoVisual"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/aumentodepeso"
+            android:text="    Aumento de peso"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkBocaDoce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkAumentoDePeso"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/bocadoce"
+            android:text="    Boca doce"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkAcantose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkBocaDoce"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/acantose"
+            android:text="    Pele escureçida"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkFadiga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkAcantose"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/fadiga"
+            android:text="    Fadiga"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkFeridasDemoradasCicatrizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkFadiga"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/feridasquedemoramacicatrizar"
+            android:text="    Cicatrização demorada"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkFome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkFeridasDemoradasCicatrizar"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/fomefrequente"
+            android:text="    Fome frequente"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkFormigamentoEFurunculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkFome"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/formigamentonospesefurunculos"
+            android:text="    Formigamentos e Furúnculos"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkInfeccoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkFormigamentoEFurunculo"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/infeccoesfrequentes"
+            android:text="    Infecções frequentes"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkMudancasDeHumor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkInfeccoes"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/mudancasdehumor"
+            android:text="    Mudanças de humor"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkVomitos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkMudancasDeHumor"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/nauseasevomitos"
+            android:text="    Náuseas e Vômitos"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkNervosismo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkVomitos"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/nervosismo"
+            android:text="    Nervosismo"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkPerdaDePeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkNervosismo"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/perdadepeso"
+            android:text="    Perda de peso"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkSede"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkPerdaDePeso"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/sedeconstante"
+            android:text="    Sede constante"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkTontura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkSede"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/tontura"
+            android:text="    Tontura"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkUrinar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkTontura"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/vontadedeurinarfrequentemente"
+            android:text="    Urinar frequentemente"
+            android:textSize="18sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilMaisSintomas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkUrinar"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/edtMaisSintomas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escrever outros sintomas (opcional)"
+                android:textSize="20sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSalvarSintomas"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnVerSintomas"
+            android:background="@android:color/holo_green_light"
+            android:text="SALVAR SINTOMAS"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnVerSintomas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tilMaisSintomas"
+            android:background="@android:color/holo_green_light"
+            android:text="VER SINTOMAS SALVOS"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

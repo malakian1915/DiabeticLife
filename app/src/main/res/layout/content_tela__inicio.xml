@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rltInicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3787FB"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.gustavo.diabeticlife.Inicio.Tela_Inicio"
+    tools:showIn="@layout/activity_tela__inicio">
+
+    <Button
+        android:id="@+id/btnSintomas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnDicas"
+        android:layout_alignEnd="@+id/btnMedicamentos"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnDicas"
+        android:layout_marginLeft="16dp"
+        android:background="@null"
+        android:drawableTop="@drawable/iconesintomas"
+        android:onClick="abrirSintomas"
+        android:text="@string/btnTxtSintomas" />
+
+    <Button
+        android:id="@+id/btnRelatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_alignEnd="@+id/btnDicas"
+        android:layout_alignStart="@+id/btnDicas"
+        android:layout_below="@+id/btnDicas"
+        android:layout_marginTop="17dp"
+        android:background="@null"
+        android:drawableTop="@drawable/iconerelatorio"
+        android:onClick="abrirRelatorio"
+        android:text="@string/btnTxtVerRelatorio" />
+
+    <Button
+        android:id="@+id/btnGrafico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnDicas"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/btnUsuario"
+        android:layout_alignTop="@+id/btnDicas"
+        android:layout_marginRight="16dp"
+        android:background="@null"
+        android:drawableTop="@drawable/iconegrafico"
+        android:onClick="abrirGrafico"
+        android:text="@string/btnTxtGrafico" />
+
+    <Button
+        android:id="@+id/btnLembrete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnDieta"
+        android:layout_alignEnd="@+id/btnDicas"
+        android:layout_alignStart="@+id/btnDicas"
+        android:layout_alignTop="@+id/btnAnotacao"
+        android:background="@null"
+        android:drawableTop="@drawable/iconelembrete"
+        android:onClick="abrirLembretes"
+        android:text="ALARMES" />
+
+    <Button
+        android:id="@+id/btnAnotacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnDieta"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/btnGrafico"
+        android:layout_alignTop="@+id/btnDieta"
+        android:layout_marginRight="16dp"
+        android:background="@null"
+        android:drawableTop="@drawable/iconeanotacao"
+        android:onClick="abrirAnotacao"
+        android:text="@string/btnTxtAnotacoes" />
+
+    <Button
+        android:id="@+id/btnDieta"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_above="@+id/btnSintomas"
+        android:layout_alignEnd="@+id/btnSintomas"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginLeft="16dp"
+        android:background="@null"
+        android:drawableTop="@drawable/iconedieta"
+        android:onClick="abrirDieta"
+        android:text="@string/btnTxtDieta" />
+
+    <Button
+        android:id="@+id/btnDicas"
+        android:layout_width="105dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:drawableTop="@drawable/iconedicas"
+        android:onClick="abrirDicas"
+        android:text="@string/btnTxtDicas" />
+
+    <Button
+        android:id="@+id/btnUsuario"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnRelatorio"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnRelatorio"
+        android:layout_marginRight="16dp"
+        android:background="@null"
+        android:drawableTop="@drawable/iconeusuario"
+        android:onClick="abriUsuario"
+        android:text="Usuario" />
+
+    <Button
+        android:id="@+id/btnMedicamentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnRelatorio"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnRelatorio"
+        android:layout_marginLeft="16dp"
+        android:background="@null"
+        android:drawableTop="@drawable/iconemedicamentos"
+        android:onClick="abriMedicamentos"
+        android:text="MEDICAMENTO" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adsInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="ca-app-pub-1897388706744089/7696021850" />
+
+</RelativeLayout>

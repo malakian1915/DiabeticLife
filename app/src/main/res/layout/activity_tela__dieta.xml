@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gustavo.diabetes_mellitus.Dieta.Tela_Dieta" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:text="Frutas" />
+
+        <CheckBox
+            android:id="@+id/chkMaca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/macadieta"
+            android:text="    Maçã"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkMorango"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkMaca"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/morangodieta"
+            android:text="    Morango"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkCereja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkMorango"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/cerejadeita"
+            android:text="    Cereja"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkAbacate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkCereja"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/abacatedeita"
+            android:text="    Abacate"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkBlueberry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkAbacate"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/blueberrydieta"
+            android:text="    Blueberry"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkLaranja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkBlueberry"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/laranjadieta"
+            android:text="    Laranja"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkLimao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkLaranja"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/limaodieta"
+            android:text="    Limão"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkAmeixa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkLimao"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/ameixadieta"
+            android:text="    Ameixa"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkTomate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkAmeixa"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/tomatedieta"
+            android:text="    Tomate"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkAbacaxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkTomate"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/abacaxidieta"
+            android:text="    Abacaxi"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkPessego"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkAbacaxi"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/pessegodieta"
+            android:text="    Pêssego"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkMelao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkPessego"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/melaodieta"
+            android:text="    Melão"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkMamao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkMelao"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/mamaodieta"
+            android:text="    Mamão"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkMelancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkMamao"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/melanciadieta"
+            android:text="    Melancia"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkBanana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkMelancia"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/bananadieta"
+            android:text="    Banana"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkManga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkBanana"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/mangadieta"
+            android:text="    Manga"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkMexerica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkManga"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/mexericadieta"
+            android:text="    Mexerica"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkAcerola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkMexerica"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/aceroladieta"
+            android:text="    Acerola"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkGoiaba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkAcerola"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/goiabadieta"
+            android:text="    Goiaba"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkKiwi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkGoiaba"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/kiwidieta"
+            android:text="    Kiwi"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkKiwi"
+            android:layout_marginTop="5dp"
+            android:text="Carnes" />
+
+        <CheckBox
+            android:id="@+id/chkCarneDePorcoAssada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textView6"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/carnedeporcoassada"
+            android:text="    Carne de porco assada"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkLomboDePorcoCozido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkCarneDePorcoAssada"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/lombodeporcocozido"
+            android:text="    Lombo de porco cozido"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkPresuntoDefumadoCru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkLomboDePorcoCozido"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/presuntodefumadocru"
+            android:text="    Presunto defumado cru"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkArenqueFresco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkPresuntoDefumadoCru"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/arenquefresco"
+            android:text="    Arenque fresco"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkFigadoDeGalinha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkArenqueFresco"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/figadodegalinha"
+            android:text="    Figado de galinha"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkOstrasCrua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkFigadoDeGalinha"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/ostrascruas"
+            android:text="    Ostras cruas"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkSalmaoCozido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkOstrasCrua"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/salmaocozido"
+            android:text="    Salmão cozido"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkSardinhasEnlatadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkSalmaoCozido"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/sardinhasenlatadas"
+            android:text="    Sardinhas enlatadas"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkOvoCozido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkSardinhasEnlatadas"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/ovocozido"
+            android:text="    Ovo cozido"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkFrangoAssado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkOvoCozido"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/frangoassadodieta"
+            android:text="    Frango assado"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkFrangoAssado"
+            android:layout_marginTop="5dp"
+            android:text="Cerais e Grãos" />
+
+        <CheckBox
+            android:id="@+id/chkAmendoim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textView7"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/amendoim"
+            android:text="    Amendoim"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkCastanhaDeCajuTorrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkAmendoim"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/castanhadecajutorrada"
+            android:text="    Castanha de caju torrada"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkCastanhaDoPara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkCastanhaDeCajuTorrada"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/castanhadopara"
+            android:text="    Castanha do Pará"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkFarinhaDeTrigoIntegral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkCastanhaDoPara"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/farinhadetrigointegral"
+            android:text="    Farinha de trigo integral"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkFlocosDeCereais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkFarinhaDeTrigoIntegral"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/flocosdecereais"
+            android:text="    Flocos de cereais"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkMilho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkFlocosDeCereais"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/milhodieta"
+            android:text="    Milho"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkGermemDoTrigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkMilho"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/germemdotrigo"
+            android:text="    Gérmem do trigo"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkSementeDeGirasol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkGermemDoTrigo"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/sementedegirasol"
+            android:text="    Semente de girassol"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkLeiteNinhoFortificado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkSementeDeGirasol"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/leiteninhofortificado"
+            android:text="    Leite ninho fortificado"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkArroz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkLeiteNinhoFortificado"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/arrozdieta"
+            android:text="    Arroz"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkFeijao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkArroz"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/feijaodieta"
+            android:text="    Feijão"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkFeijao"
+            android:layout_marginTop="5dp"
+            android:text="Verduras e Legumes" />
+
+        <CheckBox
+            android:id="@+id/chkAgriao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textView8"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/agriao"
+            android:text="    Agriaõ"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkAspargos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkAgriao"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/aspargos"
+            android:text="    Aspargos"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkBrocolis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkAspargos"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/brocolis"
+            android:text="    Brócolis"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkCouveVerde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkBrocolis"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/couveverde"
+            android:text="    Couve verde"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkEspinafre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkCouveVerde"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/espinafre"
+            android:text="    Espinafre"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkRepolho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkEspinafre"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/repolho"
+            android:text="    Repolho"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkRucula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkRepolho"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/rucula"
+            android:text="    Rúcula"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkAlface"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkRucula"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/alfacedieta"
+            android:text="    Alface"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkCenoura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkAlface"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/cenouradieta"
+            android:text="    Cenoura"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkPepino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkCenoura"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/pepinodieta"
+            android:text="    Pepino"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkAlho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkPepino"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/alhodieta"
+            android:text="    Alho"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkCebola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkAlho"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/ceboladieta"
+            android:text="    Cebola"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkRabanete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkCebola"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/rabanetedieta"
+            android:text="    Rabanete"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkBatata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkRabanete"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/batatadieta"
+            android:text="    Batata"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkBatata"
+            android:layout_marginTop="5dp"
+            android:text="Outros" />
+
+        <CheckBox
+            android:id="@+id/chkPaoFrances"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textView9"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/paofrancesdieta"
+            android:text="    Pão francês"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkPaoIntegral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkPaoFrances"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/paointergral"
+            android:text="    Pão integral"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkTorrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkPaoIntegral"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/torrada"
+            android:text="    Torrada"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkOmelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkTorrada"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/omelete"
+            android:text="    Omelete"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkQueijoBranco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkOmelete"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/queijobranco"
+            android:text="    Queijo branco"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkEspaguete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkQueijoBranco"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/espaguetedieta"
+            android:text="    Espaguete"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkBatataDoce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkEspaguete"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/batatadoce"
+            android:text="    Batata docê"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkBatataDoce"
+            android:layout_marginTop="5dp"
+            android:text="Bebidas" />
+
+        <CheckBox
+            android:id="@+id/chkAgua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textView10"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/aguadieta"
+            android:text="    Água"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkSucosNaturais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkAgua"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/suconaturaldieta"
+            android:text="    Sucos naturais"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkVitaminasDeFrutas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkSucosNaturais"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/vitaminadieta"
+            android:text="    Vitaminas de frutas"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkAguaDeCoco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkVitaminasDeFrutas"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/aguadecocodieta"
+            android:text="    Água de coco"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkLeiteDesnatado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkAguaDeCoco"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/leitedesnatadodieta"
+            android:text="    Leite desnatado"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkCafePretoDescafeinado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkLeiteDesnatado"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/cafedieta"
+            android:text="    Café preto descafeinado"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkChaSemAcucar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkCafePretoDescafeinado"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/chasemacucardieta"
+            android:text="    Chá sem açucar"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chkIogurteDesnatado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkChaSemAcucar"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/iogurtedesnatadodieta"
+            android:text="    Iogurte desnatado"
+            android:textSize="18sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilMaisAlimentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/chkIogurteDesnatado"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/edtMaisAlimentos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escrever mais alimentos (opcional)"
+                android:textSize="20sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSalvarDieta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tilMaisAlimentos"
+            android:background="@android:color/holo_green_light"
+            android:text="SALVAR DIETA"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_splash_screen"
+    tools:context="com.example.gustavo.diabetes_mellitus.Dieta.Tela_Escolher_Tipo_Dieta">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnLancheTarde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/iconelanchedatarde"
+            android:onClick="abrirLancheDaTarde"
+            android:paddingTop="30dp"
+            android:text="    Lanche da tarde"
+            android:textSize="18sp"
+            android:layout_below="@+id/btnAlmoco"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btnJanta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btnLancheTarde"
+            android:layout_below="@+id/btnLancheTarde"
+            android:background="@null"
+            android:onClick="abrirJantar"
+            android:drawableLeft="@drawable/iconejanta"
+            android:paddingTop="30dp"
+            android:text="    Jantar"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnAlmoco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:onClick="abrirAlmoco"
+            android:drawableLeft="@drawable/iconealmoco"
+            android:paddingTop="30dp"
+            android:text="    Almoço"
+            android:textSize="18sp"
+            android:layout_below="@+id/btnCafeDaManha"
+            android:layout_alignStart="@+id/btnLancheTarde" />
+
+        <Button
+            android:id="@+id/btnVerDietas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btnLancheDaNoite"
+            android:layout_below="@+id/btnLancheDaNoite"
+            android:background="@null"
+            android:drawableLeft="@drawable/iconeverdietas"
+            android:onClick="abrirDietasSalvas"
+            android:paddingTop="30dp"
+            android:text="    Dietas salvas"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnLancheDaNoite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btnLancheTarde"
+            android:layout_below="@+id/btnJanta"
+            android:background="@null"
+            android:drawableLeft="@drawable/iconelanchedanoite"
+            android:onClick="abrirLancheDaNoite"
+            android:paddingTop="30dp"
+            android:text="    Lanche da noite"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnCafeDaManha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btnAlmoco"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/iconecafedamanha"
+            android:onClick="abrirCafeDaManha"
+            android:text="    Café da manhã"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

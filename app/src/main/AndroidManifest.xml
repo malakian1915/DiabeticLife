@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gustavo.diabeticlife">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:versionCode="1"
+        android:versionName="Diabetic Life"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Inicio.Tela_Inicio"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/tituloInicio"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Anotacoes.Tela_Anotacoes"
+            android:label="@string/btnTxtAnotacoes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dieta.Tela_Dieta"
+            android:label="@string/btnTxtDieta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Alarme.Tela_Lembretes"
+            android:label="@string/btnTxtLembrete"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sintomas.Tela_Sintomas"
+            android:label="@string/btnTxtSintomas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dicas.Tela_Dicas"
+            android:label="@string/btnTxtDicas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Grafico.Tela_Grafico"
+            android:label="@string/btnTxtGrafico"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash_Screen.Splash_Screen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Dados_Usuario.Tela_Dados_Usuario"
+            android:label="@string/tituloDados"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Anotacoes.Tela_Ver_Anotacoes"
+            android:label="@string/tituloVerAnotacoes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Anotacoes.Tela_Alterar_Anotacao"
+            android:label="Alterar Anotação"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dados_Usuario.Tela_Alterar_Dados_Usuario"
+            android:label="Alterar Dados"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dieta.Tela_Escolher_Tipo_Dieta"
+            android:label="Dieta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dieta.Tela_Ver_Dietas"
+            android:label="Dietas salvas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sintomas.Tela_Ver_Sintomas"
+            android:label="Sintomas salvos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Medicamentos.Tela_Medicamentos"
+            android:label="Medicamentos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Medicamentos.Tela_Ver_Medicamentos"
+            android:label="Medicamentos salvos"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Anotacoes.Tela_Ver_Agenda"
+            android:label="Agenda"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+
+        <receiver
+            android:name=".Alarme.Alarm_Receiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".Alarme.RingtonePlayingService"
+            android:enabled="true" />
+
+    </application>
+
+</manifest>
